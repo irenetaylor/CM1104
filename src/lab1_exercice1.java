@@ -1,15 +1,11 @@
-import java.util.*;
-
 public class lab1_exercice1 {
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("The Volume of a Cone");
-        System.out.print("Please input the cone height: ");
-        double height = in.nextDouble();
-        System.out.print("Please input the cone base radius: ");
-        double radius = in.nextDouble();
-        double volume = Math.PI / 3 * radius * radius * height;
-        System.out.printf("The volume is %.3f cubic units\n", volume);
+    public static void main(String[] args){
+        double lengthInM = 1.75;
+        double lengthInInches = lengthInM * 39.37;
+        int feet = ((int)lengthInInches)/12;
+        int inches = (int)(lengthInInches - feet * 12);
+        System.out.println(lengthInM + " metres is " + feet +
+                " feet and " + inches + " inches");
     }
 }
